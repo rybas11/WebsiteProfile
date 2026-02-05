@@ -1,0 +1,103 @@
+.pengurus{
+  padding: 8rem 7% 1.4rem;
+}
+
+.pengurus h2{
+  color: var(--primary);
+  text-align: center;
+  font-size: 2.6rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* Foto Bersama */
+.foto-bersama-container {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.foto-bersama {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 1rem;
+  border: 4px solid var(--primary);
+  box-shadow: 0 0 20px rgba(47, 203, 0, 0.2);
+  transition: 0.3s; 
+  cursor: pointer;
+}
+.foto-bersama:hover {
+  transform: scale(1.03); /* Sedikit membesar */
+  box-shadow: 0 0 30px rgba(47, 203, 0, 0.5); /* Cahaya lebih terang */
+  border-color: #fff; /* Warna border berubah jadi putih saat dihover */
+}
+
+.foto-bersama-container p {
+  margin-top: 1rem;
+  font-style: italic;
+  color: #aaa;
+}
+
+/* Tabel Pengurus */
+.tabel-section {
+  margin-bottom: 5rem;
+}
+
+.tabel-section h3 {
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  border-left: 5px solid var(--primary);
+  padding-left: 1rem;
+}
+
+.pengurus-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #1a1a1a;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+
+.pengurus-table th, .pengurus-table td {
+  padding: 1.2rem;
+  text-align: left;
+  border-bottom: 1px solid #333;
+}
+
+.pengurus-table th {
+  background-color: var(--primary);
+  color: var(--bg);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.pengurus-table tr:hover {
+  background-color: #252525;
+}
+
+.pengurus-table td:first-child {
+  width: 50px;
+  text-align: center;
+  font-weight: bold;
+  color: var(--primary);
+}
+.pengurus-table tbody tr:hover {
+  background-color: #252525; /* Warna latar baris berubah sedikit terang */
+  color: var(--primary); /* Teks berubah warna menjadi hijau */
+  transition: 0.2s;
+}
+
+/* Responsif Tabel untuk HP */
+@media (max-width: 768px) {
+  .pengurus-table {
+    font-size: 0.85rem;
+  }
+  .pengurus-table th, .pengurus-table td {
+    padding: 0.8rem;
+  }
+  .foto-bersama {
+    border-width: 2px; /* Mengurangi ketebalan dari asalnya 4px */
+    box-shadow: 0 0 10px rgba(47, 203, 0, 0.1); /* Opsional: menipiskan bayangan agar serasi */
+  }
+}
